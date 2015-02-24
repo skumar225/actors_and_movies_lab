@@ -1,0 +1,9 @@
+<h1><%= @actor.title %></h1>
+
+<p><%= @actor.year %></p>
+
+<%= link_to "Edit", edit_actor_path(@actor) %>
+<%= button_to "Delete", actor_path(@actor), :method => :delete %>
+<br><br>
+
+<%= link_to "Back to all actors", actors_path %>

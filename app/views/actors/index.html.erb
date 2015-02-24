@@ -1,0 +1,13 @@
+<h1>Your Actor Database</h1>
+
+<ul>
+
+  <% @actors.each do |actor| %>
+  <li><%= link_to "#{actor.name}" %></li>
+
+  <% end %>
+</ul>
+
+<%= link_to "Add a new actor", new_actor_path %>
+
+<%= link_to "Home", site_index_path %>
