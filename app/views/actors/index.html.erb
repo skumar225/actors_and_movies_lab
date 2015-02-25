@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Your Actor Database</h1>
 
 <ul>
@@ -11,3 +12,16 @@
 <%= link_to "Add a new actor", new_actor_path %>
 
 <%= link_to "Home", site_index_path %>
+=======
+<h1>Actors</h1>
+
+<ul>
+  <% @actors.each do |star| %>
+  <li><%= link_to star.name, actor_path(star) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add new actor", new_actor_path %>
+<br><br>
+<%= link_to "Back to home", root_path %>
+>>>>>>> b6f563e4e6ddbbc2addd3b2b5d4ed2beb35a8b05
